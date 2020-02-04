@@ -9,7 +9,7 @@ namespace ConsultaRUCApp
     {
         static void Main(string[] args)
         {
-            string endpoint = "https://api.sunat.cloud/ruc/10409047594";
+            string endpoint = "https://api.sunat.cloud/ruc/20164113532";
 
             HttpWebRequest request = WebRequest.Create(endpoint) as HttpWebRequest;
             request.Method = "POST";

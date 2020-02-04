@@ -1,4 +1,6 @@
 ﻿
+using System.Collections.Generic;
+
 namespace ConsultaRUCApp
 {
     public class RUC
@@ -20,7 +22,7 @@ namespace ConsultaRUCApp
         public string fecha_inscripcion_ple { get; set; }  
         public string Oficio { get; set; }  
         public string fecha_baja { get; set; } 
-        public string[] representante_legal { get; set; } 
+        public List<RepresentanteLegal> representante_legal { get; set; } 
         public string[] empleados { get; set; } 
         public string[] locales { get; set; } 
     }
