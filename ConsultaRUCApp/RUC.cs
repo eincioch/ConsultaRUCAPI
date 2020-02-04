@@ -21,9 +21,22 @@ namespace ConsultaRUCApp
         public string emision_electronica { get; set; } 
         public string fecha_inscripcion_ple { get; set; }  
         public string Oficio { get; set; }  
-        public string fecha_baja { get; set; } 
-        public List<RepresentanteLegal> representante_legal { get; set; } 
-        public string[] empleados { get; set; } 
+        public string fecha_baja { get; set; }
+        public Dictionary<string, RepresentaLegal> representante_legal { get; set; }
+        public Dictionary<string, Empleado> empleados { get; set; } 
         public string[] locales { get; set; } 
+    }
+
+    public class RepresentaLegal
+    {
+        public string nombre { get; set; }
+        public string cargo { get; set; }
+        public string desde { get; set; }
+    }
+
+    public class Empleado {
+        public string trabajadores { get; set; }
+        public string pensionistas { get; set; }
+        public string prestadores_servicio { get; set; }
     }
 }
